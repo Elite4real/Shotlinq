@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>shotlinq - URL Shortener</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+        }
+        .bg-custom {
+            background-color: #f0f4f8;
+        }
+    </style>
+</head>
+<body class="bg-custom d-flex align-items-center justify-content-center min-vh-100">
+    <div class="container bg-white p-4 rounded shadow">
+        <nav class="navbar navbar-expand-lg navbar-light bg-primary">
+  <div class="container-fluid">
+    <a class="navbar-brand text-white" href="#">shotlinq
+
+</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="#">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Link</a>
+        </li>
+        
+    </div>
+  </div>
+</nav>
+        <section class="mb-4">
+            <h2 class="display-5 mb-2  text-bold text-warning pt-2 fw-bolder">Welcome to shotlinq</h2>
+            <p class="text-muted mb-3">Easily transform long, cumbersome links into concise, personalized URLs that reflect your brand. Make your links work harder for you. Try shotlinq today and start sharing your customized links with the world.</p>
+            <p class="h5 mb-3">Let's get you started 📌 it is free</p>
+            
+            <p class="text-muted">Kindly fill in the details of the link you wish to customize:</p>
+        </section>
+        <div class="card" style="width: 18rem;">
+  <div class="card-body">
+        <form id="urlForm" class="mb-4">
+            <div class="mb-3">
+                <label for="url" class="form-label">Long URL</label>
+                <input type="url" id="url" name="url" placeholder="https://" required class="form-control">
+            </div>
+            <div class="mb-3">
+                <label for="shortCode" class="form-label">Enter a short unique string</label>
+                <input type="text" id="shortCode" name="shortCode" placeholder="Custom short code" required class="form-control">
+            </div>
+            <button type="submit" class="btn btn-primary w-100">Create Link</button>
+        </form>
+        <div id="result" class="mt-4">
+            <!-- Results will be displayed here -->
+        </div>
+        </div>
+</div>
+        <footer class="mt-4">
+            <h3 class="h5 mb-2">What's new</h3>
+            <p class="text-muted">From: shotlinq</p>
+            <p class="text-muted mt-2">We’re continuously working to make this tool better and would love to hear your feedback <a href="https://x.com/MrEliteAfrica?t=E_kGg2ZVCLAtIFqMZ3iSHQ&s=09" class="text-white btn btn-primary">here</a>.</p>
+            <p class="text-muted mt-2">Total links created: <span id="linkCount">0</span></p>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</body>
+  </html>
+  
